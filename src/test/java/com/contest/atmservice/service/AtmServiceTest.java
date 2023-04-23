@@ -11,13 +11,12 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
-public class AtmServiceTest {
+class AtmServiceTest {
 
     @Test
-    public void testSorting() {
+    void testSorting() {
         List<AtmResponse> sortedRequests = AtmService.sortRequests(createAtmRequests());
         assertEquals(sortedRequests, createAtmResponsesForCheck());
-
     }
 
     private List<AtmRequest> createAtmRequests() {
