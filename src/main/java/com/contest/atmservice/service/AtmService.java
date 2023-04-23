@@ -2,13 +2,14 @@ package com.contest.atmservice.service;
 
 import com.contest.atmservice.dto.AtmRequest;
 import com.contest.atmservice.dto.AtmResponse;
-import lombok.NoArgsConstructor;
 
 import java.util.Comparator;
 import java.util.List;
 
-@NoArgsConstructor
 public class AtmService {
+
+    private AtmService() {}
+
     public static List<AtmResponse> sortRequests(List<AtmRequest> atmRequests) {
         return atmRequests
                 .stream()
